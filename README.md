@@ -8,3 +8,9 @@ I've been stuck in tutorial hell for far too long. I'm using this repository as 
 Each concept will be kept in separate folders and branches, so the learning path and progress are easy to follow. Inside each folder, there will be a README file providing an overview and explanation of the respective concept/project.
 
 I will complement each project with some theoretical knowledge obtained through research to have a holistic understanding of JavaScript and web development.
+
+## Resources
+A list of websites and books I'll be referring to
+
+- [MDN](https://developer.mozilla.org/en-US/)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
