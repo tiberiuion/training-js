@@ -11,6 +11,18 @@
 //Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 
 // Your code here.
+let isEven = function(N){
+    if (N == 0) {
+        return true;
+    } else if (N == 1) {
+        return false
+    } else if ( N < 0) {
+        return "Please use a positive whole number";
+    } else {
+        return isEven(N - 2)
+    }
+    
+};
 
 console.log(isEven(50));
 // → true
@@ -18,3 +30,4 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
+// Passing a negative number returns "RangeError: Maximum call stack size exeeded". My understanding is this will go on in an infinite loop because subtracting 2 from a negative number will go on indefinitely and will neve reach the values of 0 or 1. Thus, control will never reach a return statement.
