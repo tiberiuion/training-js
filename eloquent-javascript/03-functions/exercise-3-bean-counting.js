@@ -7,6 +7,29 @@
 //Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase B characters). Rewrite countBs to make use of this new function.
 
 // Your code here.
+function countBs(str) {
+    let result = 0;
+
+    for(let i = 0; i < str.length; i++) {
+        if(str[i] == 'B') {
+            result++;
+        }
+    }
+    return result;
+}
+
+function countChar(str, char) {
+    let result = 0;
+    str = str.toLowerCase();
+    char = char.toLowerCase();
+
+    for (let i = 0; i < str.length; i++) {
+        if(str[i] == char) {
+            result++
+        }
+    }
+    return result;
+}
 
 console.log(countBs("BOB"));
 // → 2
