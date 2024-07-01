@@ -8,22 +8,20 @@
 
 // Your code here.
 function countBs(str) {
-    let result = 0;
-
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] == 'B') {
-            result++;
-        }
-    }
-    return result;
+   return countChar(str, str[0]);
 }
 
+// Define the function countChar that takes (str: a string) and (char: a character to count)
 function countChar(str, char) {
+    
+    //define a variable and store the result. Set it to zero by default.
     let result = 0;
-    str = str.toLowerCase();
-    char = char.toLowerCase();
-
+    
+    // Define a for loop that iterates through each letter of the string
     for (let i = 0; i < str.length; i++) {
+        // if the current chracter str[i] matches the character we're counting AND the
+        // Note: I spent some time trying some clever things to match the case of the query character with the case of the current character in the loop strp[i].
+        // I didn't realise the double equals operator alos checks for case.
         if(str[i] == char) {
             result++
         }
@@ -31,7 +29,7 @@ function countChar(str, char) {
     return result;
 }
 
-console.log(countBs("BOB"));
+console.log(countBs("BOb"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
 // → 4
